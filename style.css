@@ -1,0 +1,123 @@
+/* Font e stile base */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Menu hamburger */
+.menu-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 999;
+}
+
+nav {
+  position: fixed;
+  top: 50px;
+  left: 15px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 998;
+}
+
+nav.hidden {
+  display: none;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero section con logo */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #fff, #f0f0f0);
+  text-align: center;
+  padding: 0 10%;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+/* Sezioni principali */
+.intro, .extra, .contatti {
+  padding: 60px 10%;
+}
+
+.intro {
+  background-color: #90ee90;
+}
+
+.contatti {
+  background-color: #66cdaa;
+}
+
+/* Galleria immagini */
+.galleria {
+  padding: 60px 10%;
+  background-color: #f0f8ff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+/* Link e footer */
+a {
+  color: #222;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  font-size: 0.9em;
+}
