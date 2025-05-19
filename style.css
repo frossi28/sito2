@@ -147,7 +147,7 @@ footer {
 .lista-colonne sx {
   flex: 1;
   min-width: 200px;
-  list-style: disc inside;
+  list-style: "❌ ";
 }
 .lista-colonne sx::before {
   content: "❌ ";
@@ -164,3 +164,4 @@ footer {
   content: "✔ ";
   margin-right: 8px;
 }
+
