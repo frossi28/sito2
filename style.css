@@ -159,8 +159,10 @@ footer {
 }
 
 .custom-list {
-  list-style: none;
-  padding-left: 10;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px 10%;
 }
 
 .custom-list si::before {
