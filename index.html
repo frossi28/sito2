@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asimmetria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav id="menu" class="hidden">
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#sezione3">Sezione 3</a>
+    <a href="#sezione4">Sezione 4</a>
+    <a href="#sezione5">Sezione 5</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Asimmetria">
+      </div>
+      <h1>Asimmetria</h1>
+      <p>Dagli studenti, per gli studenti.</p>
+    </div>
+  </header>
+
+  <section id="chi-siamo" class="intro">
+    <div class="content">
+      <h2>Chi siamo</h2>
+      <p>Asimmetria è stata fondata da un gruppo di studenti che bla bla bla ...</p>
+    </div>
+  </section>
+
+  <section id="galleria" class="galleria">
+    <h2>Galleria</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img1.jpg" alt="Foto 1">
+        <p>Didascalia 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="img2.jpg" alt="Foto 2">
+        <p>Didascalia 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="img3.jpg" alt="Foto 3">
+        <p>Didascalia 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="img4.jpg" alt="Foto 4">
+        <p>Didascalia 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sezione3" class="extra">
+    <h2>Sezione 3</h2>
+    <p>Contenuto della sezione 3...</p>
+  </section>
+
+  <section id="sezione4" class="extra">
+    <h2>Sezione 4</h2>
+    <p>Contenuto della sezione 4...</p>
+  </section>
+
+  <section id="sezione5" class="extra">
+    <h2>Sezione 5</h2>
+    <p>Contenuto della sezione 5...</p>
+  </section>
+
+  <section id="contatti" class="contatti">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:info@asimmetria.it">info@asimmetria.it</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Asimmetria</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
