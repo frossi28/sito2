@@ -165,17 +165,17 @@ footer {
 
 .custom-list si::before {
   content: "✔️ ";
-  margin-right: 8px;
+  margin-right: 0px;
 }
 
 .custom-list no::before {
   content: "❌ ";
-  margin-right: 8px;
+  margin-right: 0px;
 }
 
 
 .custom-list bo::before {
   content: "❔ ";
-  margin-right: 8px;
+  margin-right: 0px;
 }
 
