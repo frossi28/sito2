@@ -99,10 +99,28 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("hidden");
+  const menu = document.getElementById("menu");
+  const toggle = document.querySelector(".menu-toggle");
+
+  function toggleMenu() {
+    menu.classList.toggle("hidden");
+  }
+
+  // Chiudi menu quando clicchi fuori
+  document.addEventListener("click", function (e) {
+    const isClickInside = menu.contains(e.target) || toggle.contains(e.target);
+    if (!isClickInside) {
+      menu.classList.add("hidden");
     }
-  </script>
+  });
+
+  // Chiudi menu quando clicchi su un link
+  document.querySelectorAll("#menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+    });
+  });
+</script>
+  
 </body>
 </html>
