@@ -158,3 +158,24 @@ footer {
   list-style: "✔ ";
 }
 
+.custom-list {
+  list-style: none;
+  padding-left: 10;
+}
+
+.custom-list si::before {
+  content: "✔️ ";
+  margin-right: 8px;
+}
+
+.custom-list no::before {
+  content: "❌ ";
+  margin-right: 8px;
+}
+
+
+.custom-list bo::before {
+  content: "❔ ";
+  margin-right: 8px;
+}
+
