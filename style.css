@@ -138,3 +138,29 @@ footer {
   background: #fff;
   font-size: 0.9em;
 }
+.lista-colonne {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.lista-colonne sx {
+  flex: 1;
+  min-width: 200px;
+  list-style: disc inside;
+}
+.lista-colonne sx::before {
+  content: "✔️ ";
+  margin-right: 8px;
+}
+
+
+.lista-colonne dx {
+  flex: 1;
+  min-width: 200px;
+  list-style: disc inside;
+}
+.lista-colonne dx::before {
+  content: "✔ ";
+  margin-right: 8px;
+}
