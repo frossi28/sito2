@@ -72,8 +72,16 @@ nav a {
 }
 
 /* Sezioni principali */
-.intro, .extra, .contatti {
+.sectiongreen, .sectionwhite, .intro, .extra, .contatti {
   padding: 60px 10%;
+}
+
+.sectiongreen {
+  background-color: #2EC481;
+}
+
+.sectionwhite {
+  background-color: #fff;
 }
 
 .intro {
