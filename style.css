@@ -142,6 +142,7 @@ footer {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  padding: 60px 40%;
 }
 
 .lista-colonne sx {
