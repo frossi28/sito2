@@ -192,3 +192,12 @@ footer {
   font-size: 1.4em;
   color: #000;
 }
+
+.didascalia {
+  font-size: 1.1em;
+  line-height: 1.2; /* più compatto tra righe */
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #000; /* o #fff, se sfondo scuro */
+  text-align: center;
+}
