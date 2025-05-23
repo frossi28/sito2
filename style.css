@@ -114,10 +114,11 @@ nav a {
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 120px;
+  text-align: center;
 }
 
 .gallery-item p {
