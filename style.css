@@ -113,19 +113,19 @@ nav a {
   gap: 20px;
 }
 
-.gallery-item img {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.gallery-item {
   width: 120px;
   text-align: center;
 }
 
-.gallery-item p {
-  text-align: center;
-  margin-top: 8px;
-  font-size: 0.9em;
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #fff;
 }
+
+
 
 /* Link e footer */
 a {
