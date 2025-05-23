@@ -181,3 +181,12 @@ footer {
   margin-right: 0px;
 }
 
+.sottosezione {
+  margin-bottom: 40px;
+}
+
+.sottosezione h3 {
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  color: #fff;
+}
