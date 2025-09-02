@@ -23,7 +23,7 @@ h1, h2 {
 
 nav {
   position: fixed;
-  top: 0px; /* Spostato IN BASSO */
+  top: 50px; /* Spostato IN BASSO */
   left: 0px; /* Spostato a destra */
   background: white;
   border: 1px solid #ccc;
