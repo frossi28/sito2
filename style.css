@@ -110,13 +110,13 @@ nav a {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
 .gallery-item {
-  width: 120px;
   text-align: center;
+  /* width rimossa per essere fluido */
 }
 
 .gallery-item img {
@@ -126,6 +126,24 @@ nav a {
   border: none;
 }
 
+/* Media queries per schermi piccoli */
+@media (max-width: 768px) {
+  .galleria {
+    padding: 40px 5%;
+  }
+  .gallery-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleria {
+    padding: 30px 5%;
+  }
+  .gallery-item img {
+    border-radius: 6px;
+  }
+}
 
 
 /* Link e footer */
