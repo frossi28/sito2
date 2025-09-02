@@ -108,40 +108,56 @@ nav a {
   background-color: #fff;
 }
 
+.galleria h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Griglia con massimo 4 colonne */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* massimo 4 colonne */
   gap: 20px;
 }
 
+/* Singolo elemento */
 .gallery-item {
   text-align: center;
-  /* width rimossa per essere fluido */
 }
 
+/* Immagini responsive con limiti */
 .gallery-item img {
-  width: 100%;
-  height: auto;
+  width: 100%;         /* si adatta al contenitore */
+  max-width: 200px;    /* non più grande di 200px */
+  min-width: 80px;     /* non più piccola di 80px */
+  height: auto;        /* mantiene proporzioni */
   border-radius: 8px;
   border: none;
 }
 
-/* Media queries per schermi piccoli */
-@media (max-width: 768px) {
-  .galleria {
-    padding: 40px 5%;
-  }
+/* Media queries per dispositivi più piccoli */
+@media (max-width: 1024px) {
   .gallery-grid {
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne su tablet grandi */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet piccoli */
   }
 }
 
 @media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* 1 colonna su smartphone */
+  }
   .galleria {
-    padding: 30px 5%;
+    padding: 40px 5%;
   }
   .gallery-item img {
-    border-radius: 6px;
+    max-width: 150px;
+    min-width: 60px;
   }
 }
 
