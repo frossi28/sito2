@@ -174,48 +174,10 @@ footer {
   background: #fff;
   font-size: 0.9em;
 }
-.lista-colonne {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 30px 10%;
-}
-
-.lista-colonne sx {
-  flex: 1;
-  min-width: 200px;
-  list-style: "❌ ";
-}
 
 
-.lista-colonne dx {
-  flex: 1;
-  min-width: 200px;
-  list-style: "✔ ";
-}
-
-.custom-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 30px 10%;
-}
-
-.custom-list si::before {
-  content: "✔️ ";
-  margin-right: 0px;
-}
-
-.custom-list no::before {
-  content: "❌ ";
-  margin-right: 0px;
-}
 
 
-.custom-list bo::before {
-  content: "❔ ";
-  margin-right: 0px;
-}
 
 .sottosezione {
   margin-bottom: 40px;
